@@ -1,16 +1,97 @@
-body {
-	font: 12px verdana;
-	color: #333;
+body,
+html
+{
+	margin: 0;
+	padding: 0;
+	color: #000;
+	background: #fff;
+	line-height: 140%;
+	font-family: helvetica,arial,freesans,clean,sans-serif;
+	font-size: 100%;
 }
 
-.fineprint, .fineprint a {
-	font-size: 10px;
+#wrapper {
+	width: 800px;
+	margin: 0 auto;
+}
+
+.fineprint, .fineprint a
+{
+	font-size: 0.95em;
 	color: #999;
+}
+
+#header
+{
+	color: #88898C;
+	border-bottom: 1px solid #ccc;
+	letter-spacing: -1px;
+	font-size: 1.1em;
+}
+
+#nav {
+	font-weight: bold;
+	padding: 10px 0 10px 0;
+}
+
+#nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#nav li {
+	display: inline;
+	margin: 0;
+	padding: 0;
+	margin-right: 16px;
 }
 
 code {
 	display: block;
 	border: 1px solid #999;
 	padding: 4px;
-	margin-left: 12px;
+	margin-left: 15px;
+	font-family: monaco;
+}
+
+#main {
+	float: left;
+	width: 520px;
+	padding: 12px;
+}
+
+#sidebar
+{
+	float: right;
+	width: 230px;
+	padding: 10px;
+	border-width: 0 1px 1px 1px;
+	border-color: #ccc;
+	border-style: solid;
+}
+
+#footer {
+	clear: both;
+	padding: 5px 10px;
+}
+
+h2 {
+	margin:0 0 1em;
+}
+
+a, a:hover, a:visited {
+	color: #4183C4;
+	text-decoration: none;
+}
+
+#nav a, #nav a:visited
+{
+	color: #B04E7A;
+	text-decoration: none;
+}
+
+#nav a:hover
+{
+	color: #86184F;
+	text-decoration: none;
 }

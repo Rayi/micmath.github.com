@@ -1,6 +1,7 @@
 ---
 layout: default
 title: JsDoc Blog
+tag: jsdoc
 ---
 
 Welcome the newest JsDoc project, _JsDoc Toolkit 3_. As you can see I've decided to make a few changes.

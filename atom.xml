@@ -14,7 +14,7 @@ layout: nil
    <email>micmath+feed@gmail.com</email>
  </author>
  
- {% for post in site.posts limit:15 %}
+ {% for post in site.posts limit:10 %}
  <entry>
    <title>{{ post.title }}</title>
    <link href="http://micmath.github.com{{ post.url }}"/>
