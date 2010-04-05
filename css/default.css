@@ -1,0 +1,16 @@
+body {
+	font: 12px verdana;
+	color: #333;
+}
+
+.fineprint, .fineprint a {
+	font-size: 10px;
+	color: #999;
+}
+
+code {
+	display: block;
+	border: 1px solid #999;
+	padding: 4px;
+	margin-left: 12px;
+}
