@@ -1,13 +1,10 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
-        "http://www.w3.org/TR/html4/strict.dtd">
-<html lang="en">
-<head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8">
-	<title>micmath projects</title>
-</head>
-<body>
+---
+layout: default
+title: micmath projects
+---
 
-<h1>micmath projects</h1>
-
-</body>
-</html>
+{% for post in site.posts limit:10 %}
+	<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+	{{ post.content }}
+	<em>Posted on {{ post.date | date_to_long_string }}.</em>
+{% endfor %}
