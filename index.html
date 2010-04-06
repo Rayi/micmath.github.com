@@ -3,15 +3,28 @@ layout: default
 title: micmath projects
 ---
 
-{% for post in site.posts limit:10 %}
-	<h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-	{{ post.content }}
-	<em>Posted on {{ post.date | date_to_long_string }}.</em>
+{% if site.posts == empty %}
+    <p>Sorry but there are no posts here yet.</p>
+{% else %}
 	
-	<!--div>
-		<a href="{{ post.url }}#disqus_thread">View Comments</a>
-		<div id="disqus_thread"></div>
-		<script type="text/javascript" src="http://disqus.com/forums/micmathblog/embed.js"></script>
-	</div-->
-	
-{% endfor %}
+	{% for post in site.posts limit:5 %}
+		<article>
+			<header>
+				<h2><a href="{{ post.url }}" rel="bookmark">{{ post.title }}</a></h2>
+		
+				<p class="meta">
+					<strong>Published:</strong> <time>{{ post.date | date_to_string }}</time>
+					{% if post.categories.size > 0 %}<br><strong>Tagged:</strong>
+						{% for category in post.categories: %}
+						<a href="/tags.html#{{ category }}">{{ category }}</a>{% unless forloop.last %},{% endunless %}
+						{% endfor %}
+					{% endif %}
+					{% unless post.excerpt == empty %}<br><strong>Summary:</strong> {{ post.excerpt }}{% endunless %}
+				</p>
+			</header>
+		
+			{{ post.content }}
+		</article>
+		
+	{% endfor %}
+{% endif %}

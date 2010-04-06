@@ -1,3 +1,8 @@
 auto: false
 server: false
 pygments: true
+url: http://mysite.com
+exclude: ['Rakefile']
+tagsUsed:
+  - blogs
+  - jsdoc

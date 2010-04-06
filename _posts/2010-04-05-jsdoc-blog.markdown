@@ -1,7 +1,10 @@
 ---
-layout: default
+layout: post
 title: JsDoc Blog
-tag: jsdoc
+excerpt: Some thoughts on what communication channels will be available for the Version 3 JsDoc Toolkit project.
+categories:
+  - jsdoc
+  - blogs
 ---
 
 Welcome the newest JsDoc project, _JsDoc Toolkit 3_. As you can see I've decided to make a few changes.

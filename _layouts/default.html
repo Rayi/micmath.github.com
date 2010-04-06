@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<title>micmath projects | {{ page.title }}</title>
 		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
@@ -12,12 +12,16 @@
 		<div id="wrapper">
 			<div id="nav">
 				<ul>
-					<li><a href="/">Home</a></li>
+					<li><a href="/">Recent</a></li>
+					<li><a href="/tags.html">Tags</a></li>
+					<li><a href="/archive.html">Archive</a></li>
 					<li><a href="/atom.xml">Feed</a></li>
 				</ul>
 			</div>
 			
-			<div id="header"><h1>{{ page.title }}</h1></div>
+			<div id="header">
+				<h1><a href="/">micmath projects</a></h1>
+			</div>
 			
 			<div id="main">
 				{{ content }}
@@ -25,24 +29,16 @@
 			
 			<div id="sidebar">
 				
-				<div id="archive">
-					<h2>Archive</h2>
+				{% unless site.tagsUsed == empty %}
+				<div id="Tags">
+					<h2>Tags</h2>
 					
-					<ul>{% for post in site.posts %}
-						<li>
-							<a href="{{ post.url }}" title="{{ post.title }}">
-								<span class="date">
-									<span class="day">{{ post.date | date: '%d' }}</span>
-									<span class="month">
-										<abbr>{{ post.date | date: '%b' }}</abbr>
-									</span>
-									<span class="year">{{ post.date | date: '%Y' }}</span>
-								</span>
-								<span class="title">{{ post.title }}</span>
-							</a>
-						</li>
+					<ul>{% for tag in site.tagsUsed %}
+					<li><a href="tags.html#{{ tag }}">{{ tag }}</a></li>
 					{% endfor %}</ul>
 				</div>
+				{% endunless %}
+				
 			</div>
 			
 			<div id="footer" class="fineprint">

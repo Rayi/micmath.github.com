@@ -15,7 +15,7 @@ html
 	margin: 0 auto;
 }
 
-.fineprint, .fineprint a
+.fineprint, .fineprint a, .fineprint a:hover, .fineprint a:visited
 {
 	font-size: 0.95em;
 	color: #999;
@@ -44,6 +44,19 @@ html
 	margin: 0;
 	padding: 0;
 	margin-right: 16px;
+	border: none;
+}
+
+ul {
+	margin-left: 0;
+	margin-bottom: 0;
+	padding: 2px 15px 5px;
+}
+
+ul li
+{
+	padding-bottom: 2px;
+	padding-top: 3px;
 }
 
 code {
@@ -56,16 +69,16 @@ code {
 
 #main {
 	float: left;
-	width: 520px;
+	width: 550px;
 	padding: 12px;
 }
 
 #sidebar
 {
 	float: right;
-	width: 230px;
+	width: 200px;
 	padding: 10px;
-	border-width: 0 1px 1px 1px;
+	border-width: 0 0 0 1px;
 	border-color: #ccc;
 	border-style: solid;
 }
@@ -75,8 +88,9 @@ code {
 	padding: 5px 10px;
 }
 
-h2 {
+h2, h2 a, h2 a:hover, h2 a:visited {
 	margin:0 0 1em;
+	color: #777;
 }
 
 a, a:hover, a:visited {
@@ -86,12 +100,12 @@ a, a:hover, a:visited {
 
 #nav a, #nav a:visited
 {
-	color: #B04E7A;
+	color: #D35959;
 	text-decoration: none;
 }
 
 #nav a:hover
 {
-	color: #86184F;
+	color: #8C3B39;
 	text-decoration: none;
 }
