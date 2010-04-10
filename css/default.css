@@ -60,6 +60,10 @@ ul li
 }
 
 code {
+	font-family: monaco;
+}
+
+pre {
 	display: block;
 	border: 1px solid #999;
 	padding: 4px;
