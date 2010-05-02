@@ -6,3 +6,6 @@ exclude: ['Rakefile']
 tagsUsed:
   - blogs
   - jsdoc
+  - commonjs
+  - standards
+  

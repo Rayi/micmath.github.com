@@ -4,6 +4,7 @@ title: XML and JSDoc
 excerpt: Working towards the goal of a machine-readable documentation standard.
 categories:
   - jsdoc
+  - standards
 ---
 
 A major goal of _JsDoc Toolkit 3_ is to promote standards. It will finally fulfil a frequently made request from JSDoc users: A standard XML output. The challenge with this has never been technical. JsDoc Toolkit already generates XHTML, modifying the templates to produce XML would be trivial. The real challenge is deciding what XML schema to follow. As far as I know there is no authoritative standard for representing JSDoc as XML. So, to accomplish the (as I described it) trivial task of writing a XML-based template, it looks like I'll first have to tackle the much larger task of defining a standard for that format.

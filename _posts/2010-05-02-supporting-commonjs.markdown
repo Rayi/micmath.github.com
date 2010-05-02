@@ -7,7 +7,7 @@ categories:
   - commonjs
 ---
 
-As I stated in [a recent post](/commonjs/jsdoc/2010/05/02/supporting-commonjs.html), "I am a great admirer of recursion." It's one of the reasons I chose to write a JavaScript documentation tool in JavaScript. Accordingly, starting now, the official and *only* purpose of _JsDoc Toolkit 3_ is to automatically generate documentation for itself. If anyone else finds it useful, that is merely coincidental.
+As I stated in [a recent post](/commonjs/jsdoc/2010/05/02/supporting-commonjs.html), "I am a great admirer of recursion." It's one of the reasons I chose to write a JavaScript documentation tool in JavaScript. Accordingly, starting now, the official and *only* purpose of _JSDoc 3_ is to automatically generate documentation for itself. If anyone else finds it useful, that is merely coincidental.
 
 As I've chosen to use [the CommonJS Modules 1.1](http://wiki.commonjs.org/wiki/Modules/1.1) standard to organize my project's code, I am planning a `@module` tag to document it. Here's an example:
 

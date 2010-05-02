@@ -61,6 +61,8 @@ ul li
 
 code {
 	font-family: monaco;
+	font-size: 12px;
+	line-height: 100%;
 }
 
 pre {

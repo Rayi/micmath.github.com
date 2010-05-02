@@ -6,7 +6,7 @@ categories:
   - jsdoc
 ---
 
-Or, three goals for tags in _JsDoc Toolkit 3_: shorter, clearer, better.
+Or, three goals for tags in JSDoc 3: shorter, clearer, better.
 
 As this is a major version upgrade I feel I can break some backwards compatibility. As much as possible I will limit these breaks to things outside the tag standard. Asking people to rewrite all their doc comments would be a step too far. So today I committed a feature already available in Version 2: tag synonyms. This essentially allows users to use their preferred tag name in the comment, while internally JsDoc Toolkit will normalise the various names into a single doc property. It's worth pointing out that these synonyms will be exposed and can thus be modified by the user via a plugin, if they wish.
 
@@ -55,4 +55,4 @@ This pattern will be followed for several other tags too, like `@method`, `@prop
 
 ### Yet Another Standard
 
-Finally I will publish a minimum standard for JsDoc tags, in a form that can be used by others wishing to implement their own tags or tag parsers. Hopefully this will make it easier for various venders to avoid stepping on each others toes, in particular mine!
+Finally I will publish a minimum standard for JSDoc tags, in a form that can be used by others wishing to implement their own tags or tag parsers. Hopefully this will make it easier for various venders to avoid stepping on each others toes, in particular mine!
