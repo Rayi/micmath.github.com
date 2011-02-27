@@ -1,13 +1,13 @@
 <h3>Overview</h3>
 
 <p>
-JSDoc 3 has built-in support for JavaScript code that is written to conform to the <a href="http://wiki.commonjs.org/wiki/Modules/1.1">CommonJS Modules standard</a>. This allows you to document JavaScript modules and their exported members.
+JSDoc 3 has built-in support for JavaScript code that is written to conform to the <a href="http://wiki.commonjs.org/wiki/Modules/1.1">CommonJS Modules standard</a>. This allows you to easily document your own JavaScript modules and the members they export.
 </p>
 
 <h3>Document a Simple CommonJS Module</h3>
 
 <p>
-Add a single <code>@module &lt;module identifier></code> tag to the file that defines your module code and any code symbols that are documented members of the <code>exports</code> object in that file will automatically be included in the documentation for that module.
+Add a single <code>@module &lt;module identifier></code> tag at the top of the file that defines your module and any documented members of the <code>exports</code> object in that file will automatically be included in the documentation for that module.
 </p>
 
 {{#example}}The putOn and unbutton methods are documented as members of the "my/shirt" module.
@@ -22,7 +22,7 @@ exports.unbutton = function(someShirt) {
 }
 {{/example}}
 
-<h3>Document Assignment to <code>module.exports</code></h3>
+<h3>Document Members Assigned to <code>module.exports</code></h3>
 
 <p>
 Some implementations of the CommonJS Modules standard allow you to assign an object literal to the <code>module.exports</code> namespace directly. This pattern can be supported in JSDoc 3 by using the <code>@lends</code> tag.
@@ -41,7 +41,7 @@ module.exports = {
 exports.darken = function(color, shade) { }
 {{/example}}
 
-<h3>Document Assignment to Global <code>this</code></h3>
+<h3>Document Members Exported on the Global <code>this</code></h3>
 
 <p>
 JSDoc 3 understands the NodeJS convention of exporting properties and functions when they are assigned to a global <code>this</code> variable, as shown below.
@@ -88,7 +88,7 @@ define('my/shirt', function () {
 });
 {{/example}}
 
-<h3>Document Multiple RequireJS Modules Defined in One File</h3>
+<h3>Document Multiple RequireJS Modules Defined in a Single File</h3>
 
 <p>If you have multiple calls to <code>define</code> in a single file use the <code>@exports</code> tag to document each function that returns module code. Name the exported objects "exports" and JSDoc 3 will automatically document any of their members as members of their module.</p>
 
@@ -129,6 +129,6 @@ define('tag',
 <h3>See Also</h3>
 
 <ul>
-    <li><a href="requirejs-modules.html">Documenting RequireJS modules.</a></li>
-    <li><a href="http://nodejs.org/api.html#modules-324">NodeJS Modules API</a></li>
+    <li><a href="http://requirejs.org/docs/api.html#define">Defining RequireJS Modules</a></li>
+    <li><a href="http://nodejs.org/docs/v0.4.1/api/modules.html">NodeJS Modules Tutorial</a></li>
 </ul>
