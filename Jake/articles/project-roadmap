@@ -7,7 +7,7 @@ This is a high-level overview of the plans for future work on the JSDoc 3 applic
 <h3>Version 3.0</h3>
 
 <ol>
-    <li>Support doclets associated with multiple <code>var</code> declarations, separated by commas.
+    <li>&#10003; Support doclets associated with multiple <code>var</code> declarations, separated by commas.
     <pre>
     <code>
 /** for a */
@@ -18,7 +18,7 @@ b;
     </pre>
     </li>
     
-    <li>Support multiple doclets associated with a single code symbol.
+    <li>&#10003; Support multiple doclets associated with a single code symbol.
     <pre>
     <code>
 /**
@@ -40,7 +40,7 @@ this.name = function(newName){
     </pre>
     </li>
     
-    <li>Support documenting CommonJS modules with exported symbols.
+    <li>&#10003; Support documenting CommonJS modules with exported symbols.
     <pre>
     <code>
 /**
@@ -59,7 +59,7 @@ exports.doit = function(){
     <li>Improve compatibility with <a href="http://code.google.com/closure/compiler/docs/js-for-compiler.html#tags">Google's Closure Compiler</a>.
     </li>
     
-    <li>Add @default tag. Support automatic @default for simple values types like strings, numbers, null, or named variables.
+    <li>&#10003; Add @default tag. Support automatic @default for simple values types like strings, numbers, null, or named variables.
     <pre>
     <code>
 /**
@@ -72,11 +72,7 @@ var count = 1;
     </pre>
     </li>
     
-    <li>
-    Simplify the commandline arguments as much as possible.
-    </li>
+    <li>&#10003; Simplify the commandline arguments as much as possible.</li>
     
-    <li>
-    Replace the bespoke templating toolset with an open source third party tool.
-    </li>
+    <li>&#10003; Replace the bespoke templating toolset with an open source third party tool.</li>
 </ol>

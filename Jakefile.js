@@ -29,12 +29,6 @@ task('default', [], function (params) {
             description: 'Documenting code that conforms to the CommonJS server-side modules standard.'
         },
         {
-            title: 'Document RequireJS Modules',
-            body: fs.readFileSync('Jake/articles/requirejs-modules', 'utf8'),
-            out: 'requirejs-modules.html',
-            description: 'Documenting code that conforms to the RequireJS modules standard.'
-        },
-        {
             title: 'Project Roadmap',
             body: fs.readFileSync('Jake/articles/project-roadmap', 'utf8'),
             out: 'project-roadmap.html',
