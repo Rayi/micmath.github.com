@@ -5,9 +5,10 @@
 	{{#keywords}}<meta name="keywords" content="{{keywords}}">{{/keywords}}
     {{#description}}<meta name="description" content="{{description}}">{{/description}}
     
-	<title>How To JSDoc{{#title}}: {{title}}{{/title}}</title>
-	<link rel="stylesheet" href="../lib/prettify.css" />
-	<script src="../lib/prettify.js"></script>
+	<title>Use JSDoc{{#title}}: {{title}}{{/title}}</title>
+	
+	<link rel="stylesheet" href="lib/prettify.css" />
+	<script src="lib/prettify.js"></script>
 	
 	<script type="text/javascript">
 	    /* Make HTML 5 elements stylable in IE */
@@ -19,61 +20,72 @@
 	</script>
 	
 	<style>
-	body { font: .85em 'Helvetica Neue', Helvetica, Arial, sans-serif; }
-	body { padding: 0; margin: 0; }
-	
-	a, a:visited, a:active { color: #605C89; }
-	
-	dl{
-	    margin-left: 0;
-	    padding-left: 0;
-	}
-	dt {
-	    color: #919AA3;
-	    margin-left: 16px;
-	    padding-left: 4px;
-	}
-	dd {
-	    margin-left: 16px;
-	    padding-left: 4px;
-	}
-	
-	code { font: .85em Consolas, "Lucida Console", Monaco, monospace; }
-	
-	/* Make HTML 5 elements display block-level for consistent styling */
-	header, nav, article, footer, address { display: block; }
-    
-    header {
-        background-color: #EBEBEB;
-        color: #006FBB;
-        margin: 0;
-        margin-bottom: 32px;
-        padding: 18px;
-        font-size: 2.4em;
-        font-weight: bold;
-    }
-    
-    h1 { color: #B93A38; }
-    
-    .main {
-        margin: 18px;
-    }
-    
-	pre {
-	    display: block;
-	    border: 1px solid #999;
-	    margin: 12px;
-	    padding: 8px;
-	}
-	.example dt { font-weight: bold; }
-	
-	footer
-	{
-		margin: 16px;
-		margin-top: 32px;
-		font-style: italic;
-		font-size: .8em;
-	}
+		body { font: .85em 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+		
+		body
+		{
+			padding: 0;
+			margin: 0;
+		}
+		
+		a, a:visited, a:active { color: #605C89; }
+		
+		dl
+		{
+			margin-left: 0;
+			padding-left: 0;
+		}
+		
+		dt
+		{
+			color: #919AA3;
+			margin-left: 16px;
+			padding-left: 4px;
+		}
+		
+		dd
+		{
+			margin-left: 16px;
+			padding-left: 4px;
+		}
+		
+		code { font: .85em Consolas, "Lucida Console", Monaco, monospace; }
+		
+		/* Make HTML 5 elements display block-level for consistent styling */
+		header, nav, article, footer, address { display: block; }
+		
+		header
+		{
+			background-color: #EBEBEB;
+			color: #006FBB;
+			margin: 0;
+			margin-bottom: 32px;
+			padding: 18px;
+			font-size: 2.4em;
+			font-weight: bold;
+		}
+		
+		h1 { color: #B93A38; }
+		article { margin: 18px; }
+		
+		pre
+		{
+			display: block;
+			border: 1px solid #999;
+			margin: 12px;
+			padding: 8px;
+		}
+		
+		.example dt { font-weight: bold; }
+		
+		footer
+		{
+			margin: 16px;
+			margin-top: 32px;
+			font-style: italic;
+			font-size: .8em;
+		}
+
 	</style>
 </head>
 
@@ -85,6 +97,6 @@
 	<nav>
 	</nav>
 	
-	<div class="main">
+	<article>
 	{{#title}}<h1>{{title}}</h1>{{/title}}
 	

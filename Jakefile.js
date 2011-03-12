@@ -15,7 +15,7 @@ task('default', [], function (params) {
         example: fs.readFileSync('Jake/templates/example.mustache', 'utf8')
     };
     
-    var outdir = 'documents/'
+    var outdir = './'
         srcdir = 'Jake/articles/',
         articles = [];
     
