@@ -30,7 +30,7 @@ task('default', [], function (params) {
         
         eval('meta = '+meta);
         
-        meta.body = body;
+        meta.body = body.split('}-->')[1];
         articles.push(meta);
     });
  
