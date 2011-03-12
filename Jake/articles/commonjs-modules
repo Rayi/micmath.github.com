@@ -25,13 +25,12 @@ exports.unbutton = function(someShirt) {
 <h3>Document Members Assigned to <code>module.exports</code></h3>
 
 <p>
-Some implementations of the CommonJS Modules standard allow you to assign an object literal to the <code>module.exports</code> namespace directly. This pattern can be supported in JSDoc 3 by using the <code>@lends</code> tag.
+Some implementations of the CommonJS Modules standard allow you to assign an object literal to the <code>module.exports</code> namespace directly. This pattern is automatically supported by JSDoc 3.
 </p>
 
 {{#example}}The blend and darken methods are documented as members of the "color/mixer" module.
 /** @module color/mixer */
 
-/** @lends module:color/mixer */
 module.exports = {
     /** Blend two colors together. */
     blend: function(color1, color2) { }
