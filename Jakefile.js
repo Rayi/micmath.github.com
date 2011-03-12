@@ -36,8 +36,10 @@ task('default', [], function (params) {
  
     console.log('Cleaning gh-pages...');
     fs.readdirSync(outdir).forEach(function(file) {
-        fs.unlinkSync(outdir+file);
-        console.log('> removed '+outdir+file);
+        if ( /\.html$/.test(file) ) {
+            fs.unlinkSync(outdir+file);
+            console.log('> removed '+outdir+file);
+        }
     });
     
     console.log('Building new gh-pages...');
@@ -65,7 +67,6 @@ task('default', [], function (params) {
         fs.writeFileSync(outdir+article.out, html, 'utf8');
         console.log('> created '+outdir+article.out);
     });
-    
     
     function formatExample(text) {
         // the first line of the text is the title of the example code
