@@ -1,3 +1,8 @@
+<!--{
+    title:       'Document CommonJS Modules',
+    out:         'howto-commonjs-modules.html',
+    description: 'Documenting code that conforms to the CommonJS server-side modules standard.'
+}-->
 <h3>Overview</h3>
 
 <p>

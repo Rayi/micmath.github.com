@@ -2,7 +2,8 @@
 
 desc('Building the site.');
 task('default', [], function (params) {
-    var fs = require('fs');
+    var fs = require('fs'),
+        sys = require('sys');
     
     // import the Mustache template tool
     eval(fs.readFileSync('Jake/lib/mustache.js', 'utf8'));
@@ -14,28 +15,25 @@ task('default', [], function (params) {
         example: fs.readFileSync('Jake/templates/example.mustache', 'utf8')
     };
     
-    var outdir = 'howto/';
+    var outdir = 'documents/'
+        srcdir = 'Jake/articles/',
+        articles = [];
     
-    var articles = [
-        {
-            title: 'Index',
-            body: fs.readFileSync('Jake/articles/index', 'utf8'),
-            out: 'index.html'
-        },
-        {
-            title: 'Document CommonJS Modules',
-            body: fs.readFileSync('Jake/articles/commonjs-modules', 'utf8'),
-            out: 'commonjs-modules.html',
-            description: 'Documenting code that conforms to the CommonJS server-side modules standard.'
-        },
-        {
-            title: 'Project Roadmap',
-            body: fs.readFileSync('Jake/articles/project-roadmap', 'utf8'),
-            out: 'project-roadmap.html',
-            description: 'A high-level overview of the plans for future work on the JSDoc 3 application.'
-        }
-    ];
-    
+    console.log('Building index...');
+    fs.readdirSync(srcdir).forEach(function(file) {
+        if (String(file)[0] === '.') { return; }
+        
+        var body = fs.readFileSync(srcdir+file, 'utf8'),
+            meta = body.match(/^<!--(\{[\s\S]*\})-->/)[1];
+        
+        if (!meta) { return; }
+        
+        eval('meta = '+meta);
+        
+        meta.body = body;
+        articles.push(meta);
+    });
+ 
     console.log('Cleaning gh-pages...');
     fs.readdirSync(outdir).forEach(function(file) {
         fs.unlinkSync(outdir+file);
