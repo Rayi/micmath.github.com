@@ -29,7 +29,7 @@
 		<dd>Document the default value of a variable.</dd>
 	<dt><a href="tags-deprecated.html">@deprecated</a></dt>
 		<dd>This is no longer the preferred way.</dd>
-	<dt><a href="tags-desc.html">@desc or @description</a></dt>
+	<dt><a href="tags-description.html">@desc or @description</a></dt>
 		<dd>Describe the object.</dd>
 	<dt><a href="tags-event.html">@event</a></dt>
 		<dd>Document an event.</dd>
