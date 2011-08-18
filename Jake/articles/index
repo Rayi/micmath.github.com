@@ -13,7 +13,7 @@
 <dl>
 	<dt><a href="tags-augments.html">@augments or @extends</a></dt>
 		<dd>This object adds onto a parent object.</dd>
-	<dt><a href="tags-borrows.html">@borrows or @mixes</a></dt>
+	<dt><a href="tags-borrows.html">@borrows</a></dt>
 		<dd>This object uses something from another object.</dd>
 	<dt><a href="tags-constructor.html">@constructor or @class</a></dt>
 		<dd>This function is intended to be called with the "new" keyword.</dd>
@@ -59,6 +59,8 @@
 		<dd>Document the software license that applies to this code.</dd>
 	<dt><a href="tags-memberof.html">@memberof or @member</a></dt>
 		<dd>This object is a member or another object.</dd>
+	<dt><a href="tags-mixes.html">@mixes</a></dt>
+		<dd>This object mixes in all the members from another object.</dd>
 	<dt><a href="tags-mixin.html">@mixin</a></dt>
 		<dd>Document a mix-in object.</dd>
 	<dt><a href="tags-module.html">@module</a></dt>
