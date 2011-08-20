@@ -93,6 +93,8 @@
 		<dd>A shorter version of the full description.</dd>
 	<dt><a href="tags-this.html">@this</a></dt>
 		<dd>What does the this keyword refer to here?</dd>
+	<dt><a href="tags-todo.html">@todo</a></dt>
+		<dd>Document tasks to be completed for an object.</dd>
 	<dt><a href="tags-type.html">@type</a></dt>
 		<dd>Document the type of an object.</dd>
 	<dt><a href="tags-typedef.html">@typedef</a></dt>
